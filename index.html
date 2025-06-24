@@ -44,14 +44,14 @@
             <div class="h-16 w-16 rounded-full bg-gg-green flex items-center justify-center">
                 <img src="images/logoimage.png" alt="Logotyp" class="h-10 w-10 object-contain" />
             </div>
-            <span class="hidden sm:inline-block">Gröna Grannen</span>
+            <span class="inline-block">Gröna Grannen</span>
         </a>
-        <nav id="nav" class="hidden md:flex space-x-8 text-sm uppercase font-medium">
-            <a href="#om" class="hover:text-gg-green transition">Om&nbsp;oss</a>
-            <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
-            <a href="#priser" class="hover:text-gg-green transition">Priser</a>
-            <a href="#integritet" class="hover:text-gg-green transition">Integritet</a>
-            <a href="#kontakt" class="hover:text-gg-green transition">Kontakt</a>
+        <nav id="nav" class="hidden md:flex md:space-x-8 text-sm uppercase font-medium flex-col md:flex-row absolute md:static top-full left-0 w-full bg-white shadow-md md:shadow-none md:bg-transparent z-30">
+            <a href="#om" class="hover:text-gg-green transition px-4 py-2 md:px-0 md:py-0">Om&nbsp;oss</a>
+            <a href="#tjanster" class="hover:text-gg-green transition px-4 py-2 md:px-0 md:py-0">Tjänster</a>
+            <a href="#priser" class="hover:text-gg-green transition px-4 py-2 md:px-0 md:py-0">Priser</a>
+            <a href="#integritet" class="hover:text-gg-green transition px-4 py-2 md:px-0 md:py-0">Integritet</a>
+            <a href="#kontakt" class="hover:text-gg-green transition px-4 py-2 md:px-0 md:py-0">Kontakt</a>
         </nav>
         <button id="nav-toggle" class="md:hidden" aria-label="Öppna meny">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -60,7 +60,7 @@
 </header>
 
 <!-- HERO -->
-<section class="relative h-80 md:h-[34rem] bg-gg-green">
+<section class="relative min-h-[28rem] md:h-[34rem] bg-gg-green">
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow mb-2">
             Alltid lönt att tänka grönt!
@@ -84,7 +84,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="om" class="bg-white py-16">
+<section id="om" class="scroll-mt-[5rem] bg-white py-16">
     <div class="container mx-auto px-6 md:px-8">
         <h2 class="text-3xl font-bold text-center text-gg-brown mb-12">Om oss</h2>
         <div class="prose max-w-3xl mx-auto lg:prose-lg">
