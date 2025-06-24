@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<style>
+    :root {
+        --gg-green:#6fb18f;
+        --gg-cream:#fdfcf9;
+        --gg-brown:#7d5a45;
+        --header-height:4.5rem;   /* ≈ 72 px – justera om du vill */
+    }
+    .bg-gg-green{background:var(--gg-green)}
+    .text-gg-green{color:var(--gg-green)}
+    .bg-gg-cream{background:var(--gg-cream)}
+    .text-gg-brown{color:var(--gg-brown)}
+
+    /* NY RAD */
+    html{scroll-padding-top:var(--header-height);}
+</style>
+
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gröna Grannen – Alltid lönt att tänka grönt!</title>
+    <!-- Tailwind CDN for quick demo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --gg-green:#6fb18f;
+            --gg-cream:#fdfcf9;
+            --gg-brown:#7d5a45;
+        }
+        .bg-gg-green{background:var(--gg-green)}
+        .text-gg-green{color:var(--gg-green)}
+        .bg-gg-cream{background:var(--gg-cream)}
+        .text-gg-brown{color:var(--gg-brown)}
+    </style>
+</head>
+<body class="font-serif antialiased text-gray-800 bg-gg-cream scroll-smooth">
+
+<!-- HEADER -->
+<header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="container mx-auto flex items-center justify-between p-4 md:px-8">
+        <a href="#" class="flex items-center space-x-4 text-2xl md:text-3xl font-bold text-gg-brown tracking-tight">
+            <img src="https://gronagrannen.se/wp-content/uploads/2020/05/GG-Logga-kopia.jpg" alt="Logotyp" class="h-14 w-14 rounded-full shadow-lg ring-4 ring-gg-green" />
+            <span class="hidden sm:inline-block">Gröna Grannen</span>
+        </a>
+        <nav id="nav" class="hidden md:flex space-x-8 text-sm uppercase font-medium">
+            <a href="#om" class="hover:text-gg-green transition">Om&nbsp;oss</a>
+            <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
+            <a href="#priser" class="hover:text-gg-green transition">Priser</a>
+            <a href="#integritet" class="hover:text-gg-green transition">Integritet</a>
+            <a href="#kontakt" class="hover:text-gg-green transition">Kontakt</a>
+        </nav>
+        <button id="nav-toggle" class="md:hidden" aria-label="Öppna meny">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="relative bg-cover bg-center h-80 md:h-[34rem]" style="background-image:url('https://images.unsplash.com/photo-1597047940633-984e51f2e4c5?auto=format&fit=crop&w=1600&q=60')">
+    <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow mb-2">Alltid lönt att tänka grönt!</h1>
+        <p class="text-lg md:text-2xl text-gg-cream max-w-2xl">Trygg tillsyn och skötsel av ditt fritidshus på Österlen.</p>
+        <!-- Ersatt SVG med bild -->
+        <img src="/mnt/data/logoimage.png" alt="Logotyp-linje" class="mt-8 w-60 md:w-[30rem]" />
+    </div>
+</section>
+
+
+<!-- INGRESS -->
+<section class="container mx-auto py-12 px-6 md:px-8">
+    <div class="space-y-6 text-lg leading-relaxed max-w-3xl mx-auto">
+        <p>Välkommen till Gröna Grannen – din lokala partner när du vill att fritidshuset på Österlen ska må bra även när du inte är där.</p>
+        <p>Vi gör allt med minsta möjliga miljöbelastning: el‑ eller biogasbil, elcykel och tysta elverktyg. Därför tar vi <strong>ingen framkörningsavgift</strong> i vårt närområde.</p>
+        <p class="font-semibold text-gg-brown">Senaste uppdatering: 24&nbsp;juni&nbsp;2025.</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="om" class="bg-white py-16">
+    <div class="container mx-auto px-6 md:px-8">
+        <h2 class="text-3xl font-bold text-center text-gg-brown mb-12">Om oss</h2>
+        <div class="prose max-w-3xl mx-auto lg:prose-lg">
+            <p>Vi utgår från Skillinge och hjälper dig som har fritidshus i närheten – året om.</p>
+            <p>Alla våra verktyg är eldrivna, och vi kör elfordon. Det ger lägre utsläpp, mindre buller och skonar både människor och miljö.</p>
+            <p>Med flera års erfarenhet av tillsyn av hus och trädgård upptäcker vi tidigt det som riskerar att bli ett problem – och åtgärdar det innan det hinner växa sig stort.</p>
+            <p>Ligger ditt hus utanför vårt normala arbetsområde kommer vi gärna ändå, men då tillkommer en framkörningsavgift.</p>
+            <p class="font-semibold">Ansvarsförsäkring och F-skattesedel finns.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="tjanster" class="container mx-auto py-16 px-6 md:px-8">
+    <h2 class="text-3xl font-bold text-center text-gg-brown mb-12">Tjänster</h2>
+    <p class="max-w-3xl mx-auto text-center mb-10">
+        Gröna Grannen är ett företag med tjänster för dig med fritidshus på Österlen. Din fastighet får tillsyn året om och information om något inträffat eller bara vetskap om att allt är som du lämnade den.<br><br>
+        Tillsyn innebär att vi besöker din fastighet och kontrollerar att allt är OK. Skulle vi upptäcka att något inträffat skickar vi foton på vad vi sett och kommer överens med dig om vad som behöver göras. Misstänker vi brott kontaktar vi förstås polis.<br><br>
+        Vi kan också hjälpa till med saker som lätt blir försummade när du bor på annan ort.
+    </p>
+
+    <!-- Unified subtitle for all columns -->
+    <h3 class="text-xl font-semibold text-center text-gg-brown mb-8">Vi erbjuder:</h3>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gg-cream p-6 rounded-xl shadow hover:shadow-md transition">
+            <h4 class="text-lg font-semibold text-gg-brown mb-2">Trädgård & underhåll</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+                <li>Gräsklippning</li>
+                <li>Häck- & buskklippning</li>
+                <li>Beskärning av fruktträd</li>
+                <li>Nyplantering & små projekt</li>
+            </ul>
+        </div>
+        <div class="bg-gg-cream p-6 rounded-xl shadow hover:shadow-md transition">
+            <h4 class="text-lg font-semibold text-gg-brown mb-2">Tillsyn & nyckelservice</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+                <li>Inre & yttre tillsyn</li>
+                <li>Nyckelförvaring</li>
+                <li>Släppa in hantverkare</li>
+                <li>Justera värme vid behov</li>
+            </ul>
+        </div>
+        <div class="bg-gg-cream p-6 rounded-xl shadow hover:shadow-md transition">
+            <h4 class="text-lg font-semibold text-gg-brown mb-2">Städ & skötsel</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+                <li>Vårstädning inomhus</li>
+                <li>Fönsterputsning</li>
+                <li>Snöskottning</li>
+                <li>Rensning av hängrännor</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- PRICING -->
+<section id="priser" class="bg-white py-16">
+    <div class="container mx-auto px-6 md:px-8">
+        <h2 class="text-3xl font-bold text-center text-gg-brown mb-12">
+            Prislista 2025
+        </h2>
+
+        <div class="max-w-3xl mx-auto prose lg:prose-lg">
+            <p class="text-center">
+                <strong>Basavgift:</strong> 325 kr per år
+            </p>
+
+            <div class="overflow-x-auto rounded-lg shadow-sm">
+                <!-- table-auto låter browsern välja rimliga bredder,
+                     text-left stoppar centreringen -->
+                <table class="w-full table-auto text-sm border-collapse">
+                    <thead class="bg-gg-green text-white text-left">
+                    <tr>
+                        <th class="px-4 py-2">Tjänst</th>
+                        <th class="px-4 py-2 w-28">Pris</th>          <!-- låst bredd -->
+                        <th class="px-4 py-2 w-28">Efter RUT</th>     <!-- låst bredd -->
+                    </tr>
+                    </thead>
+
+                    <tbody class="text-left">
+                    <tr class="bg-gg-cream/60">
+                        <td class="px-4 py-2">Trädgård/städ /h</td>
+                        <td class="px-4 py-2">690 kr</td>
+                        <td class="px-4 py-2">345 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="px-4 py-2">Tillsyn inne</td>
+                        <td class="px-4 py-2">345 kr</td>
+                        <td class="px-4 py-2">173 kr</td>
+                    </tr>
+
+                    <tr class="bg-gg-cream/60">
+                        <td class="px-4 py-2">Tillsyn ute</td>
+                        <td class="px-4 py-2">173 kr</td>
+                        <td class="px-4 py-2">87 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="px-4 py-2">Bortforsling (släp)</td>
+                        <td class="px-4 py-2">700 kr</td>
+                        <td class="px-4 py-2">–</td>
+                    </tr>
+
+                    <tr class="bg-gg-cream/60">
+                        <td class="px-4 py-2">Bortforsling (säck)</td>
+                        <td class="px-4 py-2">68 kr</td>
+                        <td class="px-4 py-2">–</td>
+                    </tr>
+
+                    <tr>
+                        <td class="px-4 py-2">Uthyrningsstöd</td>
+                        <td class="px-4 py-2">Offert</td>
+                        <td class="px-4 py-2">–</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mt-4 text-center">
+                Vi tillämpar ett system med abonnemang som ger 10 % rabatt på
+                ovanstående priser. Kontakta oss för vidare information.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- GDPR -->
+<section id="integritet" class="container mx-auto py-16 px-6 md:px-8">
+    <h2 class="text-3xl font-bold text-center text-gg-brown mb-12">
+        Integritetspolicy (GDPR)
+    </h2>
+
+    <article class="prose max-w-none lg:prose-lg">
+        <!-- Inledning -->
+        <p>
+            Denna sekretesspolicy gäller från&nbsp;<time datetime="2018-05-25">25&nbsp;maj&nbsp;2018</time>
+            och följer EU:s dataskyddsförordning&nbsp;<abbr title="General Data Protection Regulation">GDPR</abbr>.
+        </p>
+
+        <!-- Varför vi behandlar personuppgifter -->
+        <h3>Varför vi behandlar personuppgifter</h3>
+        <p>
+            Gröna&nbsp;Grannen&nbsp;AB använder personuppgifter
+            <strong>enbart</strong> i bokföringssystemet&nbsp;Visma&nbsp;SPCS för att:
+        </p>
+        <ul>
+            <li>fakturera kunder när RUT-avdrag används,</li>
+            <li>göra skatteavdrag vid löneutbetalningar, och</li>
+            <li>rapportera sociala avgifter till Skatteverket.</li>
+        </ul>
+
+        <!-- Vilka uppgifter som behandlas -->
+        <h4>Vilka uppgifter behandlas?</h4>
+        <ul>
+            <li>Namn</li>
+            <li>Adress</li>
+            <li>Personnummer</li>
+        </ul>
+        <p>
+            <strong>Inga ytterligare uppgifter behandlas.</strong><br>
+            För detaljer om dataskydd i Visma hänvisar vi till
+            <em>Vismas egen sekretesspolicy</em>.
+        </p>
+
+        <!-- Säker lagring -->
+        <h3>Säker lagring utanför Visma</h3>
+        <p>
+            Uppgifter som lagras utanför Visma förvaras i en larmskyddad fastighet
+            (Verisure). Personnummer skickas aldrig via e-post, SMS eller MMS.
+        </p>
+
+        <!-- Gallring -->
+        <h3>Gallring och radering</h3>
+        <p>
+            När en kund eller anställd avslutar sitt engagemang raderas eller förstörs
+            samtliga personuppgifter permanent.
+        </p>
+
+        <!-- Personuppgiftsansvarig -->
+        <h3>Personuppgiftsansvarig</h3>
+        <address>
+            <strong>Katrin&nbsp;Bäcklund</strong><br>
+            Glimminge&nbsp;731<br>
+            272&nbsp;92&nbsp;Simrishamn<br>
+            <a href="tel:+46703160665">070&nbsp;316&nbsp;06&nbsp;65</a>
+        </address>
+    </article>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="kontakt" class="bg-white py-16">
+    <div class="container mx-auto px-6 md:px-8">
+        <div class="bg-gg-cream rounded-2xl shadow-lg p-8 md:p-12 md:flex md:items-start md:space-x-12">
+            <div class="md:w-1/2 space-y-4 text-lg leading-relaxed">
+                <h2 class="text-3xl font-bold text-gg-brown">Kontakt</h2>
+                <address class="not-italic">
+                    Gröna Grannen AB<br />
+                    Mastgatan&nbsp;1<br />
+                    276&nbsp;60 Skillinge
+                </address>
+                <p>E-post: <a href="mailto:info@gronagrannen.se" class="text-gg-brown hover:underline">info@gronagrannen.se</a></p>
+                <p>Telefon: <a href="tel:0703160665" class="text-gg-brown hover:underline">0703&nbsp;160&nbsp;665</a></p>
+            </div>
+            <div class="mt-8 md:mt-0 md:w-1/2 h-64">
+                <iframe
+                        class="w-full h-full rounded-xl shadow-inner"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11025.946619350986!2d14.1736526!3d55.4915076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465401e45e0122c1%3A0x64a62cba57764754!2sSkillinge!5e0!3m2!1ssv!2sse!4v1687447788898!5m2!1ssv!2sse"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-gray-200">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-8 text-sm text-gray-600 space-y-4 md:space-y-0">
+        <p>&copy; 2025 Gröna Grannen AB</p>
+        <div class="flex space-x-4">
+            <a href="#integritet" class="hover:text-gg-brown">Integritet</a>
+            <a href="#tjanster" class="hover:text-gg-brown">Tjänster</a>
+            <a href="#priser" class="hover:text-gg-brown">Priser</a>
+        </div>
+    </div>
+</footer>
+
+<!-- MOBILE NAV SCRIPT -->
+<script>
+      const toggle = document.getElementById('nav-toggle');
+      const nav = document.getElementById('nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
