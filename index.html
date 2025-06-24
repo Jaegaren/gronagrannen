@@ -49,8 +49,8 @@
         </a>
 
         <!-- Navigation -->
-        <nav id="nav" class="hidden flex-col space-y-4 px-6 space-y-4 absolute top-full left-0 w-full bg-white text-lg text-center uppercase font-medium py-6
-                        md:static md:flex md:flex-row md:space-y-0 md:space-x-8 md:text-sm md:py-0 md:bg-transparent md:text-left">
+        <nav id="nav" class="hidden flex-col space-y-4 px-6 py-6 absolute top-full left-0 w-full bg-white text-lg text-center uppercase font-medium z-30
+                    md:flex md:flex-row md:space-y-0 md:space-x-8 md:static md:w-auto md:bg-transparent md:text-sm md:py-0 md:px-0 md:text-left">
             <a href="#om" class="hover:text-gg-green transition">Om&nbsp;oss</a>
             <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
             <a href="#priser" class="hover:text-gg-green transition">Priser</a>
@@ -329,9 +329,11 @@
 
 <!-- MOBILE NAV SCRIPT -->
 <script>
-      const toggle = document.getElementById('nav-toggle');
-      const nav = document.getElementById('nav');
-      toggle.addEventListener('click', () => nav.classList.toggle('hidden'));
-    </script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
