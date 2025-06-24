@@ -2,19 +2,18 @@
 
 <style>
     :root {
-        --gg-green:#6fb18f;
-        --gg-cream:#fdfcf9;
-        --gg-brown:#7d5a45;
-        --header-height:4.5rem;   /* ≈ 72 px – justera om du vill */
+        --gg-green: #4a8a64; /* justerad till likna loggan */
+        --gg-cream: #fdfcf9;
+        --gg-brown: #7d5a45;
+        --header-height: 4.5rem;
     }
-    .bg-gg-green{background:var(--gg-green)}
-    .text-gg-green{color:var(--gg-green)}
-    .bg-gg-cream{background:var(--gg-cream)}
-    .text-gg-brown{color:var(--gg-brown)}
-
-    /* NY RAD */
-    html{scroll-padding-top:var(--header-height);}
+    .bg-gg-green { background: var(--gg-green); }
+    .text-gg-green { color: var(--gg-green); }
+    .bg-gg-cream { background: var(--gg-cream); }
+    .text-gg-brown { color: var(--gg-brown); }
+    html { scroll-padding-top: var(--header-height); }
 </style>
+
 
 
 <html lang="sv">
@@ -42,7 +41,7 @@
 <header class="bg-white shadow-md sticky top-0 z-40">
     <div class="container mx-auto flex items-center justify-between p-4 md:px-8">
         <a href="#" class="flex items-center space-x-4 text-2xl md:text-3xl font-bold text-gg-brown tracking-tight">
-            <img src="https://gronagrannen.se/wp-content/uploads/2020/05/GG-Logga-kopia.jpg" alt="Logotyp" class="h-14 w-14 rounded-full shadow-lg ring-4 ring-gg-green" />
+            <img src="images/gronagrannenlogga.png" alt="Logotyp" class="h-14 w-14 rounded-full shadow-lg ring-4 ring-gg-green" />
             <span class="hidden sm:inline-block">Gröna Grannen</span>
         </a>
         <nav id="nav" class="hidden md:flex space-x-8 text-sm uppercase font-medium">
@@ -58,13 +57,13 @@
     </div>
 </header>
 
-<!-- HERO -->
-<section class="relative bg-cover bg-center h-80 md:h-[34rem]" style="background-image:url('https://images.unsplash.com/photo-1597047940633-984e51f2e4c5?auto=format&fit=crop&w=1600&q=60')">
+<!-- HERO: Mer färgglad bakgrund -->
+<section class="relative bg-cover bg-center h-80 md:h-[34rem]" style="background-image:url('https://images.unsplash.com/photo-1587502537745-84e42fbe036e?auto=format&fit=crop&w=1600&q=60')">
     <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4">
         <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow mb-2">Alltid lönt att tänka grönt!</h1>
         <p class="text-lg md:text-2xl text-gg-cream max-w-2xl">Trygg tillsyn och skötsel av ditt fritidshus på Österlen.</p>
-        <!-- Ersatt SVG med bild -->
-        <img src="images/logoimage.png" alt="Logotyp-linje" class="mt-8 w-60 md:w-[30rem]" />
+        <!-- Justerad bild på loggan i hero -->
+        <img src="images/gronagrannenlogga.png" alt="Logotyp-linje" class="mt-8 w-40 md:w-60 rounded-full shadow-xl ring-4 ring-gg-cream" />
     </div>
 </section>
 
