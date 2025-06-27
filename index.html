@@ -48,19 +48,25 @@
             <span class="whitespace-nowrap">Gröna Grannen</span>
         </a>
 
+        <!-- Hamburger-knapp -->
+        <button id="nav-toggle" class="md:hidden" aria-label="Meny">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
 
-        <!-- Mobil- och desktopnav vertikalt på små skärmar -->
-        <nav class="flex flex-col md:flex-row md:space-x-8 text-sm uppercase font-medium text-center space-y-2 md:space-y-0">
-        <a href="#om" class="hover:text-gg-green transition">Om oss</a>
-            <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
-            <a href="#priser" class="hover:text-gg-green transition">Priser</a>
-            <a href="#integritet" class="hover:text-gg-green transition">Integritet</a>
-            <a href="#kontakt" class="hover:text-gg-green transition">Kontakt</a>
+        <!-- Desktop-nav -->
+        <nav class="hidden md:flex space-x-8 text-sm uppercase font-medium">
+            <a href="#om" class="py-3 hover:text-gg-green transition">Om oss</a>
+            <a href="#tjanster" class="py-3 hover:text-gg-green transition">Tjänster</a>
+            <a href="#priser" class="py-3 hover:text-gg-green transition">Priser</a>
+            <a href="#integritet" class="py-3 hover:text-gg-green transition">Integritet</a>
+            <a href="#kontakt" class="py-3 hover:text-gg-green transition">Kontakt</a>
         </nav>
     </div>
 
     <!-- Mobilmeny -->
-    <div id="mobile-nav" class="hidden flex-col px-6 py-6 space-y-4 text-lg text-center uppercase font-medium bg-white md:hidden">
+    <div id="mobile-nav" class="hidden flex flex-col divide-y divide-gray-200 px-6 py-6 text-lg text-center uppercase font-semibold bg-white md:hidden">
         <a href="#om" class="hover:text-gg-green transition">Om oss</a>
         <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
         <a href="#priser" class="hover:text-gg-green transition">Priser</a>
