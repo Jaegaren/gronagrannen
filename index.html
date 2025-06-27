@@ -12,7 +12,11 @@
     .text-gg-green { color: var(--gg-green); }
     .bg-gg-cream { background: var(--gg-cream); }
     .text-gg-brown { color: var(--gg-brown); }
-    html { scroll-padding-top: var(--header-height); }
+    html {
+        scroll-padding-top: 4.5rem;
+        scroll-behavior: smooth;
+    }
+
 </style>
 
 
@@ -67,12 +71,12 @@
     </div>
 
     <!-- Mobilmeny -->
-    <div id="mobile-nav" class="hidden flex flex-col divide-y divide-gray-200 px-6 py-6 text-lg text-center uppercase font-semibold bg-white md:hidden">
-        <a href="#om" class="hover:text-gg-green transition">Om oss</a>
-        <a href="#tjanster" class="hover:text-gg-green transition">Tjänster</a>
-        <a href="#priser" class="hover:text-gg-green transition">Priser</a>
-        <a href="#integritet" class="hover:text-gg-green transition">Integritet</a>
-        <a href="#kontakt" class="hover:text-gg-green transition">Kontakt</a>
+    <div id="mobile-nav" class="py-4 hidden flex flex-col divide-y divide-gray-200 px-6 py-6 text-lg text-center uppercase font-semibold bg-white md:hidden">
+        <a href="#om" class="py-4 hover:text-gg-green transition">Om oss</a>
+        <a href="#tjanster" class="py-4 hover:text-gg-green transition">Tjänster</a>
+        <a href="#priser" class="py-4 hover:text-gg-green transition">Priser</a>
+        <a href="#integritet" class="py-4 hover:text-gg-green transition">Integritet</a>
+        <a href="#kontakt" class="py-4 hover:text-gg-green transition">Kontakt</a>
     </div>
 </header>
 
@@ -373,14 +377,22 @@
 
 <!-- MOBILE NAV SCRIPT -->
 <script>
-  const links = document.querySelectorAll('#mobile-nav a');
+  const toggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('mobile-nav');
+  const links = document.querySelectorAll('#mobile-nav a');
 
+  // Toggle mobilmenyn när man klickar på hamburgaren
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+  });
+
+  // Stäng mobilmenyn efter klick på en länk
   links.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.add('hidden');
     });
   });
 </script>
+
 </body>
 </html>
