@@ -5,6 +5,7 @@
         --gg-green: #3f6b4c; /* ny mörkare grön */
         --gg-cream: #fdfcf9;
         --gg-brown: #7d5a45;
+        scroll-behavior: smooth;
         --header-height: 4.5rem;
     }
     .bg-gg-green { background: var(--gg-green); }
@@ -372,11 +373,13 @@
 
 <!-- MOBILE NAV SCRIPT -->
 <script>
-  const toggle = document.getElementById('nav-toggle');
+  const links = document.querySelectorAll('#mobile-nav a');
   const nav = document.getElementById('mobile-nav');
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('hidden');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.add('hidden');
+    });
   });
 </script>
 </body>
