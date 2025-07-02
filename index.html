@@ -17,6 +17,15 @@
         scroll-behavior: smooth;
     }
 
+
+
+    .bg-omoss {
+        background-image: url('images/osterlen.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 </style>
 
 
@@ -128,36 +137,26 @@
 
 
 <!-- ABOUT -->
-<section id="om" class="scroll-mt-[5rem] px-6 py-16 md:py-24 max-w-3xl mx-auto text-gray-800">
-    <h2 class="text-3xl font-bold text-center text-gg-brown mb-6">Om oss</h2>
+<section id="om" class="relative bg-omoss bg-cover bg-center bg-no-repeat bg-fixed text-gray-800 px-6 py-24">
+    <!-- INNEHÅLL I SEMI-GENOMSKINLIG KORTA -->
+    <div class="relative max-w-3xl mx-auto bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl px-6 md:px-12 py-12 space-y-6 text-lg leading-relaxed">
+        <h2 class="text-3xl font-bold text-center text-gg-brown mb-6">Om oss</h2>
 
-    <div class="space-y-6 text-lg leading-relaxed">
-        <p>
-            Vi utgår från Skillinge och hjälper dig som har fritidshus i närheten – året om.
-        </p>
+        <p>Vi utgår från Skillinge och hjälper dig som har fritidshus i närheten – året om.</p>
 
-        <p>
-            Alla våra verktyg är eldrivna, och vi kör elfordon. Det ger lägre utsläpp, mindre buller och skonar både människor och miljö.
-        </p>
+        <p>Alla våra verktyg är eldrivna, och vi kör elfordon. Det ger lägre utsläpp, mindre buller och skonar både människor och miljö.</p>
 
-        <p>
-            Vi har flera års erfarenhet av att hjälpa fritidshusboende med regelbunden tillsyn av hus och trädgård.
-        </p>
+        <p>Vi har flera års erfarenhet av att hjälpa fritidshusboende med regelbunden tillsyn av hus och trädgård.</p>
 
-        <p>
-            Under <a href="#tjanster" class="text-gg-green underline hover:text-gg-brown">Tjänster</a> kan du se vad vi erbjuder.
-            Ifall du har funderingar kring vilka tjänster vi erbjuder så är <a href="#kontakt" class="text-gg-green underline hover:text-gg-brown">frågan fri</a>!
-        </p>
+        <p>Under <a href="#tjanster" class="text-gg-green underline hover:text-gg-brown">Tjänster</a> kan du se vad vi erbjuder. Ifall du har funderingar så är <a href="#kontakt" class="text-gg-green underline hover:text-gg-brown">frågan fri</a>!</p>
 
-        <p>
-            Ligger ditt hus utanför vårt normala arbetsområde tillkommer en framkörningsavgift.
-        </p>
+        <p>Ligger ditt hus utanför vårt normala arbetsområde tillkommer en framkörningsavgift.</p>
 
-        <p>
-            <strong>Ansvarsförsäkring och F-skattsedel finns.</strong>
-        </p>
+        <p><strong>Ansvarsförsäkring och F-skattsedel finns.</strong></p>
     </div>
 </section>
+
+
 
 
 
@@ -372,8 +371,10 @@
             <a href="#tjanster" class="hover:text-gg-brown">Tjänster</a>
             <a href="#priser" class="hover:text-gg-brown">Priser</a>
         </div>
+        <p class="text-xs text-gray-400">Design & kod: Jacob Westerberg</p>
     </div>
 </footer>
+
 
 <!-- MOBILE NAV SCRIPT -->
 <script>
@@ -392,6 +393,14 @@
       nav.classList.add('hidden');
     });
   });
+  document.addEventListener('click', (event) => {
+  const isClickInsideMenu = nav.contains(event.target);
+  const isClickOnToggle = toggle.contains(event.target);
+
+  if (!isClickInsideMenu && !isClickOnToggle) {
+    nav.classList.add('hidden');
+  }
+});
 </script>
 
 </body>
